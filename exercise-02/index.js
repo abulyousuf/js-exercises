@@ -29,8 +29,7 @@ const people = [{
 
 const peopleOver18 = people.reduce((previousValue, currentValue) => {
     if (currentValue.age > 18) {
-        const ageOver18 = currentValue;
-        previousValue.push(ageOver18);
+        previousValue.push(currentValue);
     }
 
     return previousValue;
