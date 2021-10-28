@@ -26,8 +26,16 @@ const people = [{
     age: 44
 }];
 
-people.forEach(element => {
-    if (element.age > 18) {
-        console.log(element.name);
-    }
-});
+const getNamesOver18 = peopleArray => {
+    const temp = [];
+
+    peopleArray.forEach(element => {
+        if (element.age > 18) {
+            temp.push(element.name);
+        }
+    });
+
+    return temp;
+};
+
+console.log(getNamesOver18(people));
