@@ -27,15 +27,15 @@ const people = [{
 }];
 
 const getNamesOver18 = peopleArray => {
-    const temp = [];
+    const namesOver18 = [];
 
     peopleArray.forEach(element => {
         if (element.age > 18) {
-            temp.push(element.name);
+            namesOver18.push(element.name);
         }
     });
 
-    return temp;
+    return namesOver18;
 };
 
 console.log(getNamesOver18(people));
