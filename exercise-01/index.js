@@ -1,4 +1,4 @@
-// Create a function that returns the names of everyone that is over the age of 18.
+// Create a function that returns the object of everyone over the age of 18.
 // Using JavaScript Array filter() method.
 
 const people = [{
