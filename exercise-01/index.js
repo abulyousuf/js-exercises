@@ -26,6 +26,6 @@ const people = [{
     age: 44
 }];
 
-const peopleOver18 = people.filter(el => el.age >= 18);
+const peopleOver18 = people.filter(el => el.age > 18);
 
 console.log(peopleOver18);
