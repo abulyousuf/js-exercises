@@ -27,6 +27,6 @@ const people = [{
     age: 44
 }];
 
-const peopleOver18 = people.filter(el => el.age > 18);
+const peopleOver18 = peopleArray => peopleArray.filter(el => el.age > 18);
 
-console.log(peopleOver18);
+console.log(peopleOver18(people));
