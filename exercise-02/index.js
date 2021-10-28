@@ -27,12 +27,16 @@ const people = [{
     age: 44
 }];
 
-const peopleOver18 = people.reduce((previousValue, currentValue) => {
-    if (currentValue.age > 18) {
-        previousValue.push(currentValue.name);
-    }
+const getNamesOver18 = peopleArray => {
+    const namesOver18 = peopleArray.reduce((previousValue, currentValue) => {
+        if (currentValue.age > 18) {
+            previousValue.push(currentValue.name);
+        }
 
-    return previousValue;
-}, []);
+        return previousValue;
+    }, []);
 
-console.log(peopleOver18);
+    return namesOver18;
+};
+
+console.log(getNamesOver18(people));
