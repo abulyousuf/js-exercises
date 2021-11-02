@@ -23,11 +23,11 @@ const frankensteinQuotes = [
     "When falsehood can look so like the truth, who can assure themselves of certain happiness?"
 ];
 
-const findQuoteWithWordI = frankensteinQuotesArray => {
+const findQuotesWithWordI = frankensteinQuotesArray => {
     const quotesWithWordI = [];
 
     frankensteinQuotesArray.forEach(quote => {
-        if(quote.includes("I")) {
+        if (quote.includes("I")) {
             quotesWithWordI.push(quote);
         }
     });
@@ -35,4 +35,4 @@ const findQuoteWithWordI = frankensteinQuotesArray => {
     return quotesWithWordI;
 };
 
-console.log(findQuoteWithWordI(frankensteinQuotes));
+console.log(findQuotesWithWordI(frankensteinQuotes));
